@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-  sass: {
+    sass: {
       options: {
         sourceMap: true
       },
@@ -11,30 +11,31 @@ module.exports = function(grunt) {
           'assets/css/main.css': 'assets/sass/main.scss'
         }
       }
-    }
-  });
-  imagemin: {
-    dynamic: {
+    },
+    imagemin: {
+      dynamic: {
         files: [{
-            expand: true,
-            cwd: 'assets/images/',
-            src: ['**/*.{png,jpg,gif}'],
-            dest: 'images/build/'
+          expand: true,
+          cwd: 'assets/images/',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: 'assets/images/build/'
         }]
-    }
- }
- watch: {
-    scripts: {
+      }
+    },
+    watch: {
+      styles: {
         files: ['assets/sass/main.scss'],
         tasks: ['sass'],
         options: {
-            spawn: false,
+          spawn: false,
         },
+      }
     }
-}
+  });
   // Load the plugins tasks
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-watch');
   // Default task(s).
-  grunt.registerTask('default', ['sass', 'imagemin']);
+  grunt.registerTask('default', ['sass', 'imagemin', 'watch']);
 };
