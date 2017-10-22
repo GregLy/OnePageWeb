@@ -1,7 +1,53 @@
-/*SASS config start*/
-
-body {
-  background: #fff;
+body{
+	font-family: 'Lato', sans-serif;
 }
 
-/*SASS config end*/
+a  {
+	text-decoration: none !important;
+}
+
+/*General Use*/
+$text: #fff;
+
+/*End General Use*/
+
+.header {
+	background: url('../img/1.jpeg') center center;
+	background-size: cover;
+	min-height: 70vh;
+	}
+		.desc_line {
+			color: $text;
+			text-shadow: 2px 2px 2px #030303;
+			text-align: center;
+			margin: 10vh auto;
+				p {
+					color: $text;
+					text-shadow: 2px 2px 2px #030303;
+					text-align: center;
+					font-size: 20px;
+					text-align: justify;
+					margin: 5px 20px;
+					word-break: break-all;
+		}
+		}
+						.btn1 {
+								background-color: #778899;
+								border: 1px solid #000;
+								display: inline-block;
+								cursor: pointer;
+								border-radius: 12px;
+								padding: 20px;
+									a {
+										color: $text;
+										font-size: 16px;
+										text-decoration: none;
+										text-align: center;
+										font-family: lato;
+										font-weight: bold;
+										text-shadow: 1px 1px 1px #030303;
+						}			
+						}
+						
+	
+	
