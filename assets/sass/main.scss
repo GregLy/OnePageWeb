@@ -5,42 +5,52 @@ body{
 a  {
 	text-decoration: none !important;
 }
-
 /*General Use*/
 $text: #fff;
 
 /*End General Use*/
 
+/*Header Section Start*/
 .header {
 	background: url('../img/1.jpeg') center center;
 	background-size: cover;
 	min-height: 70vh;
 	}
-		.desc_line {
-			color: $text;
-			text-shadow: 2px 2px 2px #030303;
-			text-align: center;
-			margin: 10vh auto;
-				p {
-					color: $text;
-					text-shadow: 2px 2px 2px #030303;
+	.col-md-12 {
+		overflow: hidden;
+			.desc_line {
+				color: #778899;
+				text-shadow: 1px 1px 1px #fff;
+				text-align: center;
+				margin: 20px auto;
+					p {
+						color: #778899;
+						text-shadow: 1px 1px 1px #fff;
+						text-align: center;
+						font-weight: bold;
+						font-size: 20px;
+						text-align: justify;
+						margin: 5px 20%;
+						
+		}
+		}
+		}
+		
+				.button {
 					text-align: center;
-					font-size: 20px;
-					text-align: justify;
-					margin: 5px 20px;
-					word-break: break-all;
-		}
-		}
 						.btn1 {
 								background-color: #778899;
-								border: 1px solid #000;
+								-webkit-box-shadow:inset 1px 1px 50px px #FFFFFF;
+								box-shadow:inset 1px 1px 50px px #FFFFFF;
 								display: inline-block;
 								cursor: pointer;
 								border-radius: 12px;
 								padding: 20px;
+								width: 200px;
+								margin-top: 50px;
 									a {
 										color: $text;
-										font-size: 16px;
+										font-size: 15px;
 										text-decoration: none;
 										text-align: center;
 										font-family: lato;
@@ -48,6 +58,24 @@ $text: #fff;
 										text-shadow: 1px 1px 1px #030303;
 						}			
 						}
-						
+						}
+/*Header Section END*/
+/*Icons Section Start*/
+
+.icons {
+	text-align: center;
+	margin: 10px auto;
+	display: inline-block;
+	margin: 5px auto;
+		i {
+			font-size: 50px;
+			color: #000;
+	}
+	}
+	
+	.icon_desc {
+		color: #000;
+		}
+	
 	
 	
